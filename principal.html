@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JQUERY -->
+    <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- BOOTSTRAP  -->
+    <script type="text/javascript" src="./bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- BOOTSTRAP VALIDATOR  -->
+    <script type="text/javascript" src="./bower_components/bootstrapvalidator/dist/js/bootstrapValidator.min.js"></script>
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Website CSS style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+    <!-- Website Font style -->
+    <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+
+    <!-- FUNCIONES PROPIAS -->
+    <script type="text/javascript" src="./frontend/principal.js"></script>
+
+    <title>Pagina Principal</title>
+</head>
+
+<body style="background-color:#e6e6ff">
+    <div class="container">
+        <h2>PRINCIPAL</h2>
+        <table class="table" style="width:100%">
+            <tr>
+                <td width="40%">
+                    <table class="table table-hover" style="background-color: #99d6ff">
+                        <form id="productoForm" name="productoForm" method="post" class="form-horizontal">
+
+                            <div class="form-group col-md-12">
+                                <label class="control-label col-md-2">Nombre</label>
+                                <div class="col-md-6  inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-barcode"></i>
+                                        </span>
+                                        <input name="nombre" id="nombre" placeholder="Nombre" class="form-control" type="text">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <label class="col-md-2  control-label">Precio</label>
+                                <div class="col-md-6  inputGroupContainer">
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                            <i class="glyphicon glyphicon-usd"></i>
+                                        </span>
+                                        <input name="precio" id="precio" class="form-control" type="text" placeholder="Precio">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group col-md-12">
+                                <label class="col-md-12 col-lg-12"></label>
+                                <div class="col-md-12 col-lg-12 text-center">
+                                    <button type="submit" class="btn btn-primary" id="btnEnviar">Enviar
+                                    </button>
+
+                                    <button type="reset" class="btn btn-warning" id="btnLimpiar">Limpiar
+                                    </button>
+                                </div>
+                            </div>
+
+                        </form>
+                    </table>
+                </td>
+                <td>
+                    <div id="divTabla" style="background-color:#ccccff"> Listado de Usuarios</div>
+                </td>
+            </tr>
+        </table>
+        <div class="row">
+            <div class="col-md-6">
+                <span>
+                    <div id="divProductos" style="background-color:#b9bcbe"> Listado de productos</div>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
